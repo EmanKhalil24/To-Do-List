@@ -1,0 +1,149 @@
+:root{
+    --main-color: rgb(35, 61, 38);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 750px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 30%;
+    background: rgb(236, 236, 236);
+    border-radius: 8px;
+    box-shadow: 0px 0px 17px 2px rgba(27, 27, 27, 0.644);
+    padding: 12px 30px;
+}
+.box h1{
+    font-size: 37px;
+    font-family: system-ui;
+    color: #262525;
+    text-shadow: 0px 0px 2px #7e7e7eba;
+}
+.box .search{
+    width: 100%;
+    height: 60px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .search input{
+    height: 70%;
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 17px;
+    border-radius: 8px;
+    color: rgb(24, 24, 24);
+    outline: none;
+    border: 2px solid rgb(161, 161, 161);
+}
+.box .search .add{
+    border: none;
+    cursor: pointer;
+    color: var(--main-color);
+    position: absolute;
+    right: 37%;
+    background: transparent;
+}
+.box .option{
+    width: 100%;
+    height: 40px;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+.box .option a{
+    font-size: 21px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #262525;
+}
+.box .option a:hover{
+    color: var(--main-color);
+    text-shadow: 0 0 1px rgb(48, 92, 53);
+}
+.box .option .clear{
+    margin-left: 125px;
+    height: 90%;
+    width: 18%;
+    padding: 7px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background: var(--main-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.box hr{
+    margin-top: 2%;
+    background: var(--main-color);
+    height: 2px;
+    border: none;
+}
+.box .tasks{
+    max-height: 277px;
+    overflow-y: auto;
+}
+.box .tasks::-webkit-scrollbar{
+    width: 0;
+}
+.box .tasks .task{
+    font-size: 19px;
+    color: #262525;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 4px;
+}
+.box .tasks .task .del-edi{
+    width: 22%;
+    margin-left: 80%;
+    margin-top: -5%;
+}
+.box .tasks .task hr{
+    height: 1px;
+    background: rgba(173, 173, 173, 0.815);
+    border: none;
+}
+.box .tasks .delete, .box .tasks .edit{
+    border: none;
+    cursor: pointer;
+    color: var(--main-color);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.box .tasks .color{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+    height: 30px;
+}
+.box .tasks .no{
+    width: 100%;
+    height: 40px;
+    background: rgb(223, 221, 221);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-weight: 600;
+}
